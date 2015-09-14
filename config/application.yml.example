@@ -1,0 +1,5 @@
+development:
+  DATABASE_URL: 'db/development.sqlite'
+
+test:
+  DATABASE_URL: 'db/test.sqlite'
