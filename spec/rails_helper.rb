@@ -24,6 +24,7 @@ RSpec.configure do |config|
   config.include(MyAppHelper)
 
   config.before(:suite) do
+    `rake db:migrate`
     DatabaseCleaner[:sequel, connection: conn].strategy = :truncation
     clean_db
   end

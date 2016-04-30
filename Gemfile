@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
-rails_version = '4.2.4'
+rails_version = '~> 4.2.6'
 %w(railties activemodel actionview actionpack actionmailer).each do |name|
   gem name, rails_version
 end
